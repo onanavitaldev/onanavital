@@ -1,0 +1,76 @@
+/* Feuille de style de mon site web */
+
+*::selection
+{
+    background-color: #000;
+    color: var(--white);
+}
+
+body::-moz-selection {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+body::selection {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  border-radius: 50px;
+  width: 2px;
+  padding: 3em;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #fff;
+  border-radius: 100vw;
+  width: 1px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000 !important;
+  border-radius: 2px;
+  width: 0.1px;
+  border: none;
+  z-index: 1;
+}
+
+body
+{
+    background-color: #000 !important;
+    font-family: var(--font);
+}
+
+#banner
+{
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.63)),
+    url('../img/onanavital.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#banner .block
+{
+    animation: fadeInUp 1s;
+}
+
+#content
+{
+    background-color: #000;
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: zoomIn 1s;
+}
